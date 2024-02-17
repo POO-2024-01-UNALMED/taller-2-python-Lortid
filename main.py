@@ -57,5 +57,14 @@ class Auto :
 
         return numAsientos
 
+    def verificarIntegridad (self, objeto):
+
+        if objeto.motor.registro == objeto.registro :
+            
+            return 'h'
 
 
+if __name__ == "__main__":
+
+    auto1 = Auto('modelo 3', 3000, [Asiento('blanco', 200, 32), Asiento('blanco', 200, 32)], 'tesla', Motor(1, 'electrico', 32), 32)
+    print(auto1.cantidadAsientos(auto1))
