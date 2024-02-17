@@ -77,10 +77,3 @@ class Auto :
             
             return "Las piezas no son originales"
 
-
-if __name__ == "__main__":
-
-    a1 = Auto("model 3", 33000, [Asiento("blanco", 5000, 30), None ,Asiento("blanco", 5000, 32)],
-    "tesla", Motor(4, "electrico", 32), 32)
-
-print(a1.verificarIntegridad())
