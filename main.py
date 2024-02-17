@@ -46,10 +46,16 @@ class Auto :
         self.precio = precio
 
     def cantidadAsientos(self):
-        
-        return len(self.asientos)
 
+        numAsientos = 0
 
+        for i in range(0, len(self.asientos)):
+
+            if isinstance(self.asientos[i], Asiento):
+
+                numAsientos +=1
+
+        return numAsientos
 
     def verificarIntegridad (self, objeto):
 
