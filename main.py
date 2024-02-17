@@ -36,7 +36,7 @@ class Auto :
 
     cantidadCreados = 0
     
-    def __init__(self, modelo, precio, asientos, marca, motor, registro, ):
+    def __init__(self, modelo, precio, asientos, marca, motor, registro ):
         
         self.modelo = modelo
         self.asientos = asientos
@@ -53,6 +53,7 @@ class Auto :
             if isinstance(asientos[i], Asiento):
                 
                 cantAsientos +=1
+                return cantAsientos
                 
                 
         
