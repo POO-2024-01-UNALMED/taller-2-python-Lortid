@@ -45,17 +45,11 @@ class Auto :
         self.registro = registro
         self.precio = precio
 
-    def cantidadAsientos(self, obj):
+    def cantidadAsientos(self):
+        
+        return len(self.asientos)
 
-        numAsientos = 0
 
-        for i in range(0, len(obj.asientos)):
-
-            if isinstance(obj.asientos[i], Asiento):
-
-                numAsientos +=1
-
-        return numAsientos
 
     def verificarIntegridad (self, objeto):
 
@@ -67,4 +61,4 @@ class Auto :
 if __name__ == "__main__":
 
     auto1 = Auto('modelo 3', 3000, [Asiento('blanco', 200, 32), Asiento('blanco', 200, 32)], 'tesla', Motor(1, 'electrico', 32), 32)
-    print(auto1.cantidadAsientos(auto1))
+    print(auto1.cantidadAsientos())
