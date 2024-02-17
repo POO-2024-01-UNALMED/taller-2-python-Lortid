@@ -34,7 +34,7 @@ class Motor :
             
 class Auto :
 
-    cantidadCreados = 0
+    cantidadCreados = None
     
     def __init__(self, modelo, precio, asientos, marca, motor, registro, cantidadCreados):
         
