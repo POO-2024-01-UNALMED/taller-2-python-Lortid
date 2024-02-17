@@ -36,7 +36,7 @@ class Auto :
     
     def __init__(self, modelo, precio, asientos, marca, motor, registro, cantidadCreados):
         
-        cantidadCreados 
+        cantidadCreados = 0
         self.modelo = modelo
         self.asientos = asientos
         self.marca = marca
